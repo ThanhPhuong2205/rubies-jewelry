@@ -1,0 +1,366 @@
+* {
+
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row {
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+	justify-content: space-between;
+}
+header {
+	background-color: #102c54;
+	padding: 10px 0 10px 0;
+}
+a:hover {
+	color: black;
+
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+
+}
+p {
+	margin: 10px 0 10px 0;
+}
+.title h3 {
+	font-family: Arial;
+	font-size: 20px;
+	color: #dcac37;
+}
+.col-2 {
+	flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+.col-3 {
+	flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-8 {
+	flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+.col-2th {
+	flex: 0 0 20%;
+    max-width: 20%;
+}
+.col-12 {
+	flex: 0 0 100%;
+    max-width: 100%;
+}
+.menu ul li {
+
+	float: left;
+	margin-left: 20px;
+	list-style: none;
+
+}
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+ul.menu_child {
+	position: absolute;
+	width: 225px;
+	background-color: #102c54;
+	z-index: 9999;
+
+}
+ul.menu_child li {
+	padding: 15px 0 0 0 ;
+	float: none;
+	display: none;
+}
+.menu ul li:hover ul.menu_child li {
+	display: block;
+}
+/*Slider*/
+		.mySlides {
+			display: none;
+		}
+		.slideshow-container {
+		  max-width: 100%;
+		  position: relative;
+		  margin: unset;
+		}
+		img {
+			vertical-align: middle;
+		}
+		.prev , .next{
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bolder;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+		.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*end slider*/
+.slider-margin {
+	margin-top: 20px;
+}
+.image img {
+	width: 100%;
+}
+.card {
+	margin-top: 20px ;
+	margin-bottom: 20px;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Roboto;
+ }
+body{
+     justify-content: flex-end;
+     align-items: center;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+footer{
+     width: 100%;
+     height: auto;
+     padding: 50px 100px;
+     background: #102c54;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+footer .container1{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+ /*Thiết Lập Cho Thành Phần Nội Dung Giới Thiệu*/
+ footer .container1 .noi-dung{
+     margin-right: 30px;
+ }
+footer  .container1 .noi-dung.about{
+     width:40%;
+ }
+ footer .container1 .noi-dung.about h2{
+     position: relative;
+     color: #dcac37;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+ footer .container1 .noi-dung.about h2:before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+     background: #f00;
+ }
+footer .container1 .noi-dung.about p{
+     color: #fff;
+ }
+ /*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+ .social-icon{
+     margin-top: 20px;
+     display: flex;
+ }
+.social-icon li {
+     list-style: none;
+ }
+ .social-icon li a{
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     background: #dcac37;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 10px;
+     text-decoration: none;
+     border-radius: 4px;
+ }
+.social-icon li a:hover{
+     background: #f00;
+ }
+.social-icon li a .fa{
+     color: #102c54;
+     font-size: 20px;
+ }
+.links h2{
+     position: relative;
+     color: #dcac37;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+ .links h2{
+     position: relative;
+     color: #dcac37;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+.links h2::before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+     background: #f00;
+ }
+.links{
+    position: relative;
+    width: 25%;
+ }
+ .links ul li{
+     list-style: none;
+ }
+ .links ul li a{
+     color: #fff;
+     text-decoration: none;
+     margin-bottom: 10px;
+     display: inline-block;
+ }
+.links ul li a:hover{
+     color: #fff;
+ }
+ .contact h2{
+     position: relative;
+     color: #dcac37;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+.contact h2::before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+     background: #f00;
+ }
+.contact{
+     width: calc(35% - 60px);
+     margin-right: 0 !important;
+ }
+.contact .info{
+     position: relative;
+ }
+ .contact .info li{
+     display: flex;
+     margin-bottom: 16px;
+ }
+ .contact .info li span:nth-child(1) {
+     color: #dcac37;
+     font-size: 20px;
+     margin-right: 10px;
+ }
+.contact .info li span{
+     color: #fff;
+ }
+.contact .info li a{
+     color: #fff;	
+     text-decoration: none;
+ }
+ @media  (max-width: 768px){
+     footer{
+         padding: 40px;
+              }
+     footer .container1{
+         flex-direction: column;
+     }
+     footer .container1 .noi-dung{
+         margin-right: 0;
+         margin-bottom: 40px;
+     }
+     footer .container1, .noi-dung.about, .links, .contact{
+         width: 100%;
+     }
+ }
+ .name{
+ 	text-align: center;
+ }
+ .price{
+ 	text-align: center;
+ }
